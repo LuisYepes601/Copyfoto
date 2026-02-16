@@ -1,0 +1,42 @@
+:root {
+    --primary: #FFD400;
+    --dark: #1A1A1A;
+    --light: #F5F5F5;
+    --accent: #00A8E8;
+    --accent-ligth: #97e2ff;
+    --roboto: Roboto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: var(--roboto);
+}
+
+
+.header {
+    background-color: var(--primary);
+    grid-column: 1/5;
+    height: 114px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
+
+}
+
+.header-logo {
+    max-height: 100px;
+    height: 100%;
+}
+
+@keyframes carrusel {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
