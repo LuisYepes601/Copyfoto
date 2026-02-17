@@ -4,7 +4,7 @@ import { obtnerEnlaces } from "../Services/nav-header.js"
 import { crearCarrusel } from "../Components/carrusel.js"
 import { categorias } from "../Services/Categogrias-carrusel.js"
 import { btnBurguer } from "../Components/burguerBtn.js"
-
+import { crearBtnHome } from "../Components/btn-home.js"
 export function cargarLogoHome() {
 
     const header = document.querySelector(".header");
@@ -51,3 +51,14 @@ export function cargarBtnBurguer() {
 
     header.append(btn);
 }
+
+export function cargarBtnHome() {
+    const header = document.querySelector(".header");
+
+    if (!header) return;
+
+    const btn = crearBtnHome();
+
+    header.append(btn);
+}
+

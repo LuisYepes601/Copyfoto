@@ -25,9 +25,20 @@
 
 }
 
+.url-home {
+    height: 100%;
+}
+
 .header-logo {
     max-height: 100px;
     height: 100%;
+}
+
+.main {
+    grid-column: 1/5;
+    background-color: var(--light);
+    padding: 2rem 1rem;
+
 }
 
 @keyframes carrusel {

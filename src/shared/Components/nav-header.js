@@ -10,7 +10,7 @@ export function crearNavHeader(urls) {
     listaUrls.classList.add("nav-lista");
 
 
-    urls.forEach(element => {
+    urls.forEach((element, index) => {
 
         const liSobreNosotros = document.createElement("li");
         liSobreNosotros.className = "li-item";
@@ -19,10 +19,12 @@ export function crearNavHeader(urls) {
         url.textContent = element.nameBtn;
         url.className = "url-nav-header";
         url.href = element.url;
-
+        url.addEventListener("click", () => mostrarUrlSeleccionada)
         liSobreNosotros.append(url);
 
         listaUrls.append(liSobreNosotros);
+
+
 
     });
 
@@ -32,6 +34,27 @@ export function crearNavHeader(urls) {
     return nav;
 
 }
+
+function mostrarUrlSeleccionada() {
+
+    const urls = document.querySelectorAll(".url-nav-header");
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        urls.forEach(element => {
+
+            console.log(element);
+
+
+        });
+    })
+
+
+
+
+}
+
 
 
 
