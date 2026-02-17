@@ -205,7 +205,7 @@
 }
 
 .hero-title {
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 400;
 }
 
