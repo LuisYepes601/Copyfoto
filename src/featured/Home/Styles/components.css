@@ -20,7 +20,7 @@
 
 .titulo-section {
     font-size: clamp(1rem, 3.2vw, 2rem);
-    
+
 }
 
 .container-services {
@@ -73,13 +73,73 @@
     transform: scale(0.95);
 }
 
-@media(max-width:780px){
-    .container-services {
-        grid-template-columns: repeat(2, 1fr);
+.elegirnos {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    color: var(--light);
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.elegirnos-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.elegirnos-img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    animation: moverMuñeco 2s linear infinite;
+}
+
+@keyframes moverMuñeco {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
     }
 }
 
-@media(max-width:480px){
+.elegirnos-title {
+    font-size: clamp(1.2rem, 3.5vw, 1.9rem);
+    font-weight: 200;
+}
+
+.elegirnos-lista {
+    list-style: disc;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+
+}
+
+.elegirnos-item {
+    color: #FFD400;
+}
+
+@media(max-width:780px) {
+    .container-services {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .elegirnos {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+}
+
+@media(max-width:480px) {
     .container-services {
         grid-template-columns: repeat(1, 1fr);
     }
