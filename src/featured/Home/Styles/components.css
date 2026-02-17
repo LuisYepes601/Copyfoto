@@ -1,0 +1,74 @@
+:root {
+    --primary: #FFD400;
+    --dark: #1A1A1A;
+    --light: #F5F5F5;
+    --accent: #00A8E8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.services-principales {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.titulo-section {
+    font-size: clamp(1rem, 3.2vw, 2rem);
+    
+}
+
+.container-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+.card-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 1px solid var(--light);
+    justify-content: flex-start;
+    transition: transform .5s, border .5s, background-color.5s;
+    cursor: pointer;
+
+}
+
+.card-service:hover {
+    transform: translateY(10px);
+    border: 1px solid var(--dark);
+    background-color: #F5F5F5;
+
+}
+
+.card-service-title {
+    color: var(--dark);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: 200;
+    display: flex;
+    align-items: stretch;
+}
+
+
+.card-service-img {
+    width: 100%;
+    max-width: 500px;
+    transition: transform .5s;
+
+
+}
+
+.card-service-img:hover {
+    transform: scale(0.95);
+}
