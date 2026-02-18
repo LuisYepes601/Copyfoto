@@ -3,6 +3,7 @@ import { cargarLogoHome, cargarNavHeader, CargarCarrusel, cargarBtnBurguer, carg
 import { cargarHero } from "../featured/Home/Hooks/hero.js"
 import { cargarServicesPricipals } from "../featured/Home/Hooks/servicesPrincipals.js"
 import {  cargarCaracteristicas} from "../featured/Home/Hooks/porqueElegirnos.js";
+import{cargarOpiniones} from "../featured/Home/Hooks/opiniones.js"
 
 
 cargarLogoHome();
@@ -18,6 +19,10 @@ cargarHero();
 cargarServicesPricipals();
 
 cargarCaracteristicas();
+
+cargarOpiniones();
+
+
 
 
 

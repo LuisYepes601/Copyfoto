@@ -2,7 +2,7 @@
     --primary: #FFD400;
     --dark: #1A1A1A;
     --light: #F5F5F5;
-    --accent: #00A8E8;
+    --accent: #68cef6;
 }
 
 .main {
@@ -127,6 +127,67 @@
     color: #FFD400;
 }
 
+.opinions-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.opinions-sec-title {
+    background-color: #FFD400;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+}
+
+.container-opinions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-radius: 10px;
+    grid-auto-rows: 1fr;
+}
+
+.card-opinon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-opinon:nth-child(odd) {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    transition: background-color .5s;
+
+}
+
+.card-opinon:nth-child(odd):hover {
+
+    background-color: transparent;
+}
+
+.card-opinion-info-per {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.calfContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
 @media(max-width:780px) {
     .container-services {
         grid-template-columns: repeat(2, 1fr);
@@ -137,10 +198,18 @@
         flex-direction: column-reverse;
         gap: 2rem;
     }
+
+    .container-opinions {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(max-width:480px) {
     .container-services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-opinions {
         grid-template-columns: repeat(1, 1fr);
     }
 }
