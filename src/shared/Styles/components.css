@@ -245,3 +245,57 @@
     background-color: var(--light);
     transform: scale(0.9);
 }
+
+/* CARD OPINION*/
+
+.card-opinon {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .5s;
+    border: 1px solid var(--accent);
+}
+
+.card-opinon:hover {
+    background-color: transparent;
+    border: 1px solid var(--dark);
+}
+
+.card-opinon:nth-child(odd) {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    transform: translateY(-30px);
+
+}
+
+.card-opinion-info-per {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.calfContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.rate {
+    display: flex;
+    gap: .8rem;
+}
+
+.rate .bi {
+    color: var(--primary);
+}
+
+.rate .bi:hover {
+    transform: scale(2);
+}

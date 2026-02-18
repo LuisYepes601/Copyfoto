@@ -152,41 +152,7 @@
     grid-auto-rows: 1fr;
 }
 
-.card-opinon {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    background-color: var(--accent);
-    padding: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
-.card-opinon:nth-child(odd) {
-    background-color: var(--light);
-    border: 1px solid var(--dark);
-    transition: background-color .5s;
-
-}
-
-.card-opinon:nth-child(odd):hover {
-
-    background-color: transparent;
-}
-
-.card-opinion-info-per {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.calfContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-}
 
 @media(max-width:780px) {
     .container-services {

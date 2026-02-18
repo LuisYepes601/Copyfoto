@@ -12,11 +12,7 @@ export function crearCardOpinion(dataCard) {
 
     const name = document.createElement("p");
     name.classList.add("info-personal-name");
-    name.textContent = dataCard.name;
-
-    const lastName = document.createElement("p");
-    lastName.classList.add("info-personal-lastname");
-    lastName.textContent = dataCard.lastName;
+    name.textContent = dataCard.name + " " + dataCard.lastName;
 
     const calificacionContainer = document.createElement("div");
     calificacionContainer.classList.add("calfContainer");
@@ -44,7 +40,7 @@ export function crearCardOpinion(dataCard) {
 
     calificacionContainer.append(rate, mensaje)
 
-    infoPersonal.append(name, lastName);
+    infoPersonal.append(name);
 
     card.append(infoPersonal, calificacionContainer);
 
