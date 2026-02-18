@@ -1,9 +1,9 @@
-import { cargarLogoHome, cargarNavHeader, CargarCarrusel, cargarBtnBurguer, cargarBtnHome } from "../shared/Hooks/app.js"
+import { cargarLogoHome, cargarNavHeader, CargarCarrusel, cargarBtnBurguer, cargarBtnHome, CargarFooter } from "../shared/Hooks/app.js"
 
 import { cargarHero } from "../featured/Home/Hooks/hero.js"
 import { cargarServicesPricipals } from "../featured/Home/Hooks/servicesPrincipals.js"
-import {  cargarCaracteristicas} from "../featured/Home/Hooks/porqueElegirnos.js";
-import{cargarOpiniones} from "../featured/Home/Hooks/opiniones.js"
+import { cargarCaracteristicas } from "../featured/Home/Hooks/porqueElegirnos.js";
+import { cargarOpiniones } from "../featured/Home/Hooks/opiniones.js"
 
 
 cargarLogoHome();
@@ -21,6 +21,9 @@ cargarServicesPricipals();
 cargarCaracteristicas();
 
 cargarOpiniones();
+
+CargarFooter();
+
 
 
 

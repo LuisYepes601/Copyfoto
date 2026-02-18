@@ -5,6 +5,8 @@ import { crearCarrusel } from "../Components/carrusel.js"
 import { categorias } from "../Services/Categogrias-carrusel.js"
 import { btnBurguer } from "../Components/burguerBtn.js"
 import { crearBtnHome } from "../Components/btn-home.js"
+import { crearFooter } from "../Components/footer.js";
+import { dataServices } from "../../featured/Home/Services/servicesPrincipals.js";
 export function cargarLogoHome() {
 
     const header = document.querySelector(".header");
@@ -60,5 +62,17 @@ export function cargarBtnHome() {
     const btn = crearBtnHome();
 
     header.append(btn);
+}
+
+export function CargarFooter() {
+
+    const footer = document.querySelector(".footer");
+
+    if (!footer) return;
+
+    const conatiner = crearFooter(dataServices, obtnerEnlaces());
+
+    footer.append(conatiner);
+
 }
 

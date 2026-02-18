@@ -41,6 +41,11 @@
 
 }
 
+.footer {
+    grid-column: 1/5;
+
+}
+
 @keyframes carrusel {
 
     from {

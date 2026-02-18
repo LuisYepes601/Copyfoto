@@ -132,7 +132,6 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-
 }
 
 .opinions-sec-title {
@@ -150,6 +149,8 @@
     gap: 1rem;
     border-radius: 10px;
     grid-auto-rows: 1fr;
+    width: 100%;
+    padding: 1rem;
 }
 
 
