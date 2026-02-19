@@ -27,8 +27,8 @@
 }
 
 .header.header-scroll {
-    background-color: #00A8E8;
-    
+    background-color: var(--accent);
+   
 }
 
 
