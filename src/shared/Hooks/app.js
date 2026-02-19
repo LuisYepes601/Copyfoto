@@ -9,6 +9,7 @@ import { crearFooter } from "../Components/footer.js";
 import { dataServices } from "../../featured/Home/Services/servicesPrincipals.js";
 import { btnWpp } from "../Components/btn-wpp.js";
 import { btnMail } from "../Components/btn-mail.js";
+import { btnFace } from "../Components/btn-facebook.js";
 
 
 
@@ -95,5 +96,14 @@ export function cargarBtnMailFlotante() {
     const btn = btnMail();
 
     document.body.append(btn);
+}
+
+export function caragarBtnFacebookc() {
+    
+
+    const btn = btnFace();
+
+    document.body.append(btn);
+    
 }
 

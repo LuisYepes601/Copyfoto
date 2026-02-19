@@ -6,7 +6,7 @@ export function btnMail() {
     btn.href = "mailto:fotosanjacinto@gmail.com"
 
     const iconMail = document.createElement("i");
-    iconMail.className = "bi bi-envelope btn-mail";
+    iconMail.className = "bi bi-envelope icon-mail";
 
     btn.append(iconMail);
     return btn;
