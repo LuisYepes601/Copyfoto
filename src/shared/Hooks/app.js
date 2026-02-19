@@ -7,6 +7,11 @@ import { btnBurguer } from "../Components/burguerBtn.js"
 import { crearBtnHome } from "../Components/btn-home.js"
 import { crearFooter } from "../Components/footer.js";
 import { dataServices } from "../../featured/Home/Services/servicesPrincipals.js";
+import { btnWpp } from "../Components/btn-wpp.js";
+import { btnMail } from "../Components/btn-mail.js";
+
+
+
 export function cargarLogoHome() {
 
     const header = document.querySelector(".header");
@@ -74,5 +79,21 @@ export function CargarFooter() {
 
     footer.append(conatiner);
 
+}
+
+export function cargarBtnWppFlotant() {
+
+
+    const btn = btnWpp();
+
+    document.body.append(btn);
+
+}
+
+export function cargarBtnMailFlotante() {
+    
+    const btn = btnMail();
+
+    document.body.append(btn);
 }
 
