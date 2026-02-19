@@ -22,8 +22,16 @@
     top: 0;
     z-index: 1000;
     padding: 1rem;
+    transition: background 2s;
 
 }
+
+.header.header-scroll {
+    background-color: #00A8E8;
+    
+}
+
+
 
 body.dark .header {
     background-color: #4f4e4e;

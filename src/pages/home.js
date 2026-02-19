@@ -1,4 +1,4 @@
-import { cargarLogoHome, cargarNavHeader, CargarCarrusel, cargarBtnBurguer, cargarBtnWppFlotant, CargarFooter, cargarBtnMailFlotante, caragarBtnFacebookc, caragarBtnLigth, cargarDark } from "../shared/Hooks/app.js"
+import { cargarLogoHome, cargarNavHeader, CargarCarrusel, cargarBtnBurguer, cargarBtnWppFlotant, CargarFooter, cargarBtnMailFlotante, caragarBtnFacebookc, caragarBtnLigth, cargarDark, isDark, CambioColorHeader } from "../shared/Hooks/app.js"
 
 import { cargarHero } from "../featured/Home/Hooks/hero.js"
 import { cargarServicesPricipals } from "../featured/Home/Hooks/servicesPrincipals.js"
@@ -34,6 +34,10 @@ caragarBtnFacebookc();
 caragarBtnLigth();
 
 cargarDark();
+
+isDark();
+
+CambioColorHeader();
 
 
 

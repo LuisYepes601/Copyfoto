@@ -10,8 +10,11 @@ import { dataServices } from "../../featured/Home/Services/servicesPrincipals.js
 import { btnWpp } from "../Components/btn-wpp.js";
 import { btnMail } from "../Components/btn-mail.js";
 import { btnLigth } from "../Components/btn-ligth.js";
-import {  btnDark } from "../Components/btn-dark.js";
+import { btnDark } from "../Components/btn-dark.js";
 import { btnFace } from "../Components/btn-facebook.js";
+import { gestionStateMode } from "../Utils/gestionStateMode.js";
+
+import { headerColorCambio } from "../Utils/cambiarheadercolor.js";
 
 
 export function cargarLogoHome() {
@@ -124,6 +127,20 @@ export function cargarDark() {
 
     document.body.append(btn);
 
+}
+
+export function isDark() {
+
+    window.addEventListener("DOMContentLoaded", gestionStateMode())
+}
+
+export function CambioColorHeader() {
+
+    let header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+        headerColorCambio(header)
+    })
 }
 
 

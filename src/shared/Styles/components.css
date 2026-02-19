@@ -304,6 +304,11 @@ body.dark .hero {
 
 }
 
+body.dark .card-opinon {
+    background-color: #6d6c6c;
+    border: 1px solid #6d6c6c;
+}
+
 .card-opinon:hover {
     background-color: transparent;
     border: 1px solid var(--dark);
@@ -312,6 +317,12 @@ body.dark .hero {
 
 .card-opinon:nth-child(odd) {
     background-color: #F5F5F5;
+}
+
+body.dark .card-opinon:nth-child(odd) {
+    background-color: var(--dark);
+    border: 1px solid var(--light);
+    color: var(--light);
 }
 
 .card-opinon:nth-child(odd):hover {
@@ -327,6 +338,11 @@ body.dark .hero {
     gap: .5rem;
 }
 
+body.dark .info-personal-name {
+
+    color: var(--light);
+}
+
 .calfContainer {
     display: flex;
     flex-direction: column;
@@ -335,6 +351,11 @@ body.dark .hero {
     background-color: var(--light);
     padding: .9rem;
     border-radius: 20px;
+}
+
+body.dark .calfContainer-mensaje {
+
+    color: var(--dark);
 }
 
 .rate {
