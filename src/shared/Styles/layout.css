@@ -28,7 +28,11 @@
 
 .header.header-scroll {
     background-color: var(--accent);
-   
+
+}
+
+body.dark .header.header-scroll {
+    background-color: #6e6d6d;
 }
 
 
