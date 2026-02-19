@@ -9,8 +9,9 @@ import { crearFooter } from "../Components/footer.js";
 import { dataServices } from "../../featured/Home/Services/servicesPrincipals.js";
 import { btnWpp } from "../Components/btn-wpp.js";
 import { btnMail } from "../Components/btn-mail.js";
+import { btnLigth } from "../Components/btn-ligth.js";
+import {  btnDark } from "../Components/btn-dark.js";
 import { btnFace } from "../Components/btn-facebook.js";
-
 
 
 export function cargarLogoHome() {
@@ -92,18 +93,37 @@ export function cargarBtnWppFlotant() {
 }
 
 export function cargarBtnMailFlotante() {
-    
+
     const btn = btnMail();
 
     document.body.append(btn);
 }
 
 export function caragarBtnFacebookc() {
-    
+
 
     const btn = btnFace();
 
     document.body.append(btn);
-    
+
 }
+
+export function caragarBtnLigth() {
+
+
+    const btn = btnLigth();
+
+    document.body.append(btn);
+
+}
+
+export function cargarDark() {
+
+
+    const btn = btnDark();
+
+    document.body.append(btn);
+
+}
+
 

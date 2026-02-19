@@ -1,6 +1,7 @@
 :root {
     --primary: #FFD400;
     --dark: #1A1A1A;
+    --dark-light: #616161;
     --light: #F5F5F5;
     --accent: #68cef6;
 }
@@ -9,6 +10,10 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+body.dark .main {
+    background-color: var(--dark);
 }
 
 .services-principales {
@@ -20,6 +25,11 @@
 
 .titulo-section {
     font-size: clamp(1rem, 3.2vw, 2rem);
+
+}
+
+body.dark .titulo-section {
+    color: var(--light);
 
 }
 
@@ -45,6 +55,11 @@
 
 }
 
+body.dark .card-service {
+    background-color: var(--dark);
+
+}
+
 .card-service:hover {
     transform: translateY(10px);
     border: 1px solid var(--dark);
@@ -58,6 +73,10 @@
     font-weight: 200;
     display: flex;
     align-items: stretch;
+}
+
+body.dark .card-service-title {
+    color: var(--light);
 }
 
 

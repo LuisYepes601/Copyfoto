@@ -25,6 +25,10 @@
 
 }
 
+body.dark .header {
+    background-color: #4f4e4e;
+}
+
 .url-home {
     height: 100%;
 }
