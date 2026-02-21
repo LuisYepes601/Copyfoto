@@ -54,11 +54,13 @@ body.dark .header {
     grid-column: 1/5;
     background-color: var(--light);
     padding: 2rem 1rem;
+    transition: background 1s;
 
 }
 
 .footer {
     grid-column: 1/5;
+    transition: background 1s;
 
 }
 
