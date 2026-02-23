@@ -18,7 +18,7 @@ export function createServicesEspecials(services) {
         cardService.classList.add("card-service");
 
         cardService.addEventListener("click",()=>{
-            window.location.href="sobreNosotros.html";
+            window.location.href="servicios.html";
         })
 
         const title = document.createElement("p");

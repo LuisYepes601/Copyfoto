@@ -2,16 +2,16 @@ export function obtnerEnlaces() {
 
     const urls = [{
 
-        nameBtn: "Sobre nosotros",
-        url: "sobreNosotros.html"
-    },{
+        nameBtn: "Home",
+        url: "index.html"
+    }, {
 
-        nameBtn: "Nuestros Servicios",
+        nameBtn: "Sobre Nosotros",
         url: "sobreNosotros.html"
-    },{
+    }, {
 
-        nameBtn: "Sobre ",
-        url: "sobreNosotros.html"
+        nameBtn: "Servicios",
+        url: "servicios.html"
     }]
 
 

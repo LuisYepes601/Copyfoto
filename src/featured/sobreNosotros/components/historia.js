@@ -7,8 +7,22 @@ export function historia(historiaData) {
     titulo.classList.add("history-title");
     titulo.textContent = "Historia y Experiencia."
 
+
     const infoPrincipal = document.createElement("div");
     infoPrincipal.classList.add("history-main");
+
+    const iamgenPrincipal = document.createElement("div");
+    iamgenPrincipal.classList.add("imagenContainer");
+
+    const img = document.createElement("img");
+    img.classList.add("info-principal-img");
+    img.src = historiaData.img;
+
+    iamgenPrincipal.append(img);
+
+    const historiaMainInfo = document.createElement("div");
+    historiaMainInfo.classList.add("historiaMainInfo");
+
 
     const fechaCreacion = document.createElement("h3");
     fechaCreacion.classList.add("history-main-title");
@@ -18,7 +32,10 @@ export function historia(historiaData) {
     contenido.classList.add("history-main-content")
     contenido.textContent = historiaData.content;
 
-    infoPrincipal.append(fechaCreacion, contenido);
+
+    historiaMainInfo.append(fechaCreacion, contenido)
+
+    infoPrincipal.append(iamgenPrincipal, historiaMainInfo);
 
     historia.append(titulo, infoPrincipal);
 

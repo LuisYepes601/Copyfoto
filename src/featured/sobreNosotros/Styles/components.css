@@ -23,14 +23,36 @@ body.dark .main {
     gap: 2rem;
 }
 
+.history-title {
+    text-align: center;
+}
+
 .history-main {
     display: flex;
     gap: 1rem;
-    flex-direction: column;
+    flex-direction:column-reverse;
+
+}
+
+.imagenContainer {
+    display: flex;
+    justify-content: center;
+}.info-principal-img{
+    width: 100%;
+    object-fit: cover;
+    max-width: 500px;
 }
 
 .history-main-content {
     line-height: 2rem;
+}
+
+.historiaMainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 body.dark .history {
