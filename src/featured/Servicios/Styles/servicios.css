@@ -121,7 +121,9 @@ body.dark .card-service-info {
 .btn-verDetails:hover {
     transform: scale(0.9);
     background-color: var(--light);
-}.card-service:hover .btn-verDetails{
+}
+
+.card-service:hover .btn-verDetails {
     background-color: var(--light);
 }
 
