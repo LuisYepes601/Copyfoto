@@ -1,3 +1,5 @@
+import {  crearCardService} from "../Components/cardService.js";
+
 export function crearSeccionServicios(serviciosData) {
     
     const services = document.createElement("section");
@@ -13,7 +15,7 @@ export function crearSeccionServicios(serviciosData) {
 
     serviciosData.forEach(element => {
         
-        const servicio = 0;
+        const servicio = crearCardService(element);
 
         containerServices.append(servicio);
     });

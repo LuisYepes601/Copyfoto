@@ -1,9 +1,9 @@
 
-function crearCardService(data) {
+export function crearCardService(data) {
     const card = document.createElement("div");
     card.classList.add("card-service");
 
-    const title = document.createElement("h2");
+    const title = document.createElement("h3");
     title.classList.add("card-service-title");
     title.textContent = data.title;
 
@@ -12,14 +12,43 @@ function crearCardService(data) {
 
     const img = document.createElement("img");
     img.classList.add("service-info-img");
-    img.textContent = data.img;
-    
+    img.src = data.img;
 
-    cardServiceInfo.append(img);
+    const precio = document.createElement("p");
+    precio.classList.add("service-info-precio")-'`';
+    precio.textContent = `${"Precio: " +"$"}` + data.precio;
 
-    card.append(title, cardServiceInfo);
+    const btnVerdDetalles = document.createElement("button");
+    btnVerdDetalles.classList.add("btn-verDetails");
+    btnVerdDetalles.textContent = "Ver detalles";
+    btnVerdDetalles.addEventListener("click", () => {
+        verDetalles(data);
+    })
+
+    const iconVerDetalles = document.createElement("i");
+    iconVerDetalles.classList.add("bi");
+    iconVerDetalles.classList.add("bi-eye-fill");
+    iconVerDetalles.classList.add("icon-ver-details");
+
+
+    btnVerdDetalles.append(iconVerDetalles);
+
+    cardServiceInfo.append(img, precio);
+
+    card.append(title, cardServiceInfo, btnVerdDetalles);
+
+    card.addEventListener("click", ()=>{
+        verDetalles(data)
+    })
 
     return card;
+}
+
+function verDetalles(data) {
+
+    console.log(data.title);
+
+
 }
 
 
