@@ -1,3 +1,4 @@
+import { crearModalDetalles } from "../Components/modalDetalles.js";
 
 export function crearCardService(data) {
     const card = document.createElement("div");
@@ -15,8 +16,8 @@ export function crearCardService(data) {
     img.src = data.img;
 
     const precio = document.createElement("p");
-    precio.classList.add("service-info-precio")-'`';
-    precio.textContent = `${"Precio: " +"$"}` + data.precio;
+    precio.classList.add("service-info-precio") - '`';
+    precio.textContent = `${"Precio: " + "$"}` + data.precio;
 
     const btnVerdDetalles = document.createElement("button");
     btnVerdDetalles.classList.add("btn-verDetails");
@@ -37,17 +38,17 @@ export function crearCardService(data) {
 
     card.append(title, cardServiceInfo, btnVerdDetalles);
 
-    card.addEventListener("click", ()=>{
-        verDetalles(data)
-    })
 
     return card;
 }
 
 function verDetalles(data) {
 
-    console.log(data.title);
 
+    const modal = crearModalDetalles(data);
+
+    document.body.append(modal);
+    document.body.classList.add("modal-detalles-open");
 
 }
 

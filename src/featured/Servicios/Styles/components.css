@@ -1,0 +1,87 @@
+:root {
+    --primary: #FFD400;
+    --dark: #1A1A1A;
+    --light: #F5F5F5;
+    --accent: #00A8E8;
+    --roboto: Roboto;
+}
+
+.mod-detalles {
+    background-color: var(--light);
+    position: fixed;
+    top: 25%;
+    right: 50%;
+    transform: translateX(50%);
+    transform: translateX(50%);
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid var(--dark);
+    font-family: var(--roboto);
+
+}
+
+body.dark .mod-detalles {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.mod-detalles .container {
+    opacity: 0.5;
+}
+
+
+.mod-detalles-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.mod-detalles-img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.modal-detalles-btn-close {
+    width: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .5s;
+    background-color: transparent;
+}
+
+.iconClose {
+    font-size: 1.5rem;
+    color: var(--dark);
+    transition: color .5s;
+
+}
+
+body.dark .iconClose {
+    color: var(--light);
+}
+
+.modal-detalles-btn-close:hover {
+    transform: scale(0.9);
+}
+
+.modal-detalles-btn-close:hover .iconClose {
+    color: red;
+}
+
+.mod-detalles.close {
+    display: none;
+}
+
+
+
+body.modal-detalles-open .container {
+    opacity: 0.4;
+    pointer-events: none;
+}

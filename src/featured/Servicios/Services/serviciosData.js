@@ -21,7 +21,7 @@ export const getServicios = [{
     title: "Impresion A Color de un solo lado",
     descripcion: "Disfruta de impresiones a color con una calidad imprencendible.",
     img: "https://res.cloudinary.com/divhisdcx/image/upload/v1771963012/impcolor_vdylfv.png",
-    category: "B/N",
+    category: "C",
     tipoService: "Impresion",
     precio: "700",
     tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
