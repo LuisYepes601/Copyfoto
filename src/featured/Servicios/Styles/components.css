@@ -129,3 +129,11 @@ body.modal-detalles-open .container {
     background-color: var(--light);
     padding: 0 1rem;
 }
+
+@media(max-width:480px) {
+
+    .container-filter-main{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
