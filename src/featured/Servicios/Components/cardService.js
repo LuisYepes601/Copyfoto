@@ -3,6 +3,10 @@ import { crearModalDetalles } from "../Components/modalDetalles.js";
 export function crearCardService(data) {
     const card = document.createElement("div");
     card.classList.add("card-service");
+    card.addEventListener("click", () => {
+
+        verDetalles(data);
+    })
 
     const title = document.createElement("h3");
     title.classList.add("card-service-title");
@@ -22,7 +26,8 @@ export function crearCardService(data) {
     const btnVerdDetalles = document.createElement("button");
     btnVerdDetalles.classList.add("btn-verDetails");
     btnVerdDetalles.textContent = "Ver detalles";
-    btnVerdDetalles.addEventListener("click", () => {
+    btnVerdDetalles.addEventListener("click", (e) => {
+        e.stopPropagation();
         verDetalles(data);
     })
 
@@ -37,6 +42,8 @@ export function crearCardService(data) {
     cardServiceInfo.append(img, precio);
 
     card.append(title, cardServiceInfo, btnVerdDetalles);
+
+
 
 
     return card;

@@ -652,3 +652,15 @@ body .btn-ligth {
     font-size: 2rem;
     padding: .9rem;
 }
+
+/*modal empty*/
+
+.container-empty {
+    display: none;
+}
+
+.container-empty.active {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+}

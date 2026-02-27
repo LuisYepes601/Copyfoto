@@ -1,6 +1,5 @@
+
 export function crearModalDetalles(data) {
-
-
 
     const modal = document.createElement("div");
     modal.classList.add("mod-detalles");
