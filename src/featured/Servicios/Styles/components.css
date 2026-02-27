@@ -103,6 +103,11 @@ body.modal-detalles-open .container {
     width: 100%;
     padding: .8rem;
     border-radius: 15px;
+    transition: background .5s;
+}
+
+body.dark .container-filter-title {
+    background-color: #414141;
 }
 
 .container-filter-main {

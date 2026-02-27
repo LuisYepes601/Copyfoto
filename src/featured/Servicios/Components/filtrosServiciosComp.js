@@ -24,7 +24,7 @@ export function crearFiltrosServicios(data, containerService) {
     filterCategory.classList.add("filter-category");
 
     const opt = document.createElement("option");
-    opt.value = "all"
+    opt.value = "inicial"
     opt.textContent = "Seleccione una Categoria";
 
     const optFot = document.createElement("option");
@@ -35,7 +35,15 @@ export function crearFiltrosServicios(data, containerService) {
     optImp.textContent = "Impresiones";
     optImp.value = "Impresion";
 
-    filterCategory.append(opt, optFot, optImp);
+    const optAll = document.createElement("option");
+    optAll.textContent = "Todos";
+    optAll.value = "all";
+
+    const optFoto = document.createElement("option");
+    optFoto.textContent = "Fotografia";
+    optFoto.value = "Fotografia";
+
+    filterCategory.append(opt, optFot, optImp, optAll,optFoto);
 
     containerFiltersMain.append(filterCategory, filterSearch)
 
@@ -59,6 +67,7 @@ export function crearFiltrosServicios(data, containerService) {
     })
 
 
+
     return containerFilters;
 
 
@@ -71,18 +80,22 @@ function aplicarfiltros(Filters, data, containerService) {
 
     let prueba = data.filter(d => {
 
+        if (d.title.toLowerCase().includes(Filters.search.value.toLowerCase()) && Filters.category.value == "inicial") {
+            return true;
+        }
+
         if (Filters.search.value === "" && Filters.category.value == "all") {
             return true;
         }
 
-        if (d.title.toLowerCase().includes(Filters.search.value) && Filters.category.value == "all") {
+        if (d.title.toLowerCase().includes(Filters.search.value.toLowerCase()) && Filters.category.value == "all") {
             return true;
         }
 
         if (Filters.search.value === "" && Filters.category.value == d.tipoService && Filters.search.value === "") {
             return true;
         }
-        if (d.title.toLowerCase().includes(Filters.search.value) && d.tipoService == Filters.category.value) {
+        if (d.title.toLowerCase().includes(Filters.search.value.toLowerCase()) && d.tipoService == Filters.category.value) {
 
             return true;
         } else {
