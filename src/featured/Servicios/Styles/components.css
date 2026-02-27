@@ -132,8 +132,8 @@ body.modal-detalles-open .container {
 
 @media(max-width:480px) {
 
-    .container-filter-main{
-        flex-direction: column;
+    .container-filter-main {
+        flex-direction: column-reverse;
         gap: 1rem;
     }
 }
