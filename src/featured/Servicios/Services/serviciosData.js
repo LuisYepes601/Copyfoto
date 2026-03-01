@@ -52,4 +52,22 @@ export const getServicios = [{
     tipoService: "Fotografia",
     precio: "4000",
     tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
+}, {
+
+    title: "Impresiones A color doble cara",
+    descripcion: "Disfruta de impresiones doble cara a color con una calidad insprencedible.",
+    img: "https://res.cloudinary.com/divhisdcx/image/upload/v1772385617/ChatGPT_Image_1_mar_2026_12_18_24_p.m._hapmnd.png",
+    category: "C",
+    tipoService: "Impresion",
+    precio: "1000",
+    tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
+}, {
+
+    title: "Impresiones En Papel Stiker o Adhesivo.",
+    descripcion: "Disfruta de impresiones en papel adhesivo a color con una calidad insprencedible.",
+    img: "https://res.cloudinary.com/divhisdcx/image/upload/v1772386371/Pi%CC%81xel_ttlp8i.png",
+    category: "C",
+    tipoService: "Impresion",
+    precio: "4000",
+    tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
 }];
