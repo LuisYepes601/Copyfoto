@@ -2,7 +2,7 @@ export function btnWpp() {
 
     const btnWpp = document.createElement("a");
     btnWpp.classList.add("btn-wpp");
-    btnWpp.href = "https://wa.me/573008998311";
+    btnWpp.href = "https://wa.me/573145750713";
     btnWpp.target = "_blank";
 
     const iconWpp = document.createElement("i");
