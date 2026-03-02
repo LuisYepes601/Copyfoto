@@ -70,4 +70,31 @@ export const getServicios = [{
     tipoService: "Impresion",
     precio: "4000",
     tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
+}, {
+
+    title: "Descarga de Resultados de Laboratorio.",
+    descripcion: "",
+    img: "https://res.cloudinary.com/divhisdcx/image/upload/v1772389784/resultado_laboratorio_yf2amw.jpg",
+    category: "C",
+    tipoService: "Resultados",
+    precio: "1000-3000",
+    tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
+}, {
+
+    title: "Descarga de Resultados de Rayos X.",
+    descripcion: "Desacarga tus resultados de Rayos X con nosotros y obtendars un servicio de calidad.",
+    img: "https://res.cloudinary.com/divhisdcx/image/upload/v1772390035/rx1-1024x555_pve0lm.jpg",
+    category: "C",
+    tipoService: "Resultados",
+    precio: "1000-2000",
+    tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
+},{
+
+    title: "Descarga de Resultados de Patologias.",
+    descripcion: "Desacarga tus resultados de Patologias, tales como; Biposias, Citologías, Endoscopias, entre otros, y obtendras un servicio de calidad.",
+    img: "https://res.cloudinary.com/divhisdcx/image/upload/v1772390451/BLOG-Medicina-patologia-CABECERA_rhu96a.png",
+    category: "C",
+    tipoService: "Resultados",
+    precio: "1000-3000",
+    tamPapel: [{ nombre: "Carta" }, { nombre: "Legal" }],
 }];

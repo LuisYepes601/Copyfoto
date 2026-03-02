@@ -43,7 +43,11 @@ export function crearFiltrosServicios(data, containerService) {
     optFoto.textContent = "Fotografia";
     optFoto.value = "Fotografia";
 
-    filterCategory.append(opt, optFot, optImp, optAll,optFoto);
+   const optResults = document.createElement("option");
+    optResults.textContent = "Resultados";
+    optResults.value = "Resultados";
+
+    filterCategory.append(opt, optFot, optImp, optAll,optFoto, optResults);
 
     containerFiltersMain.append(filterCategory, filterSearch)
 
